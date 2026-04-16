@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-core"
+version = "0.1.0"
+description = "LangGraph core for the elder care agent MVP"
+requires-python = ">=3.11"
+dependencies = [
+  "langgraph>=0.2.69",
+  "langchain>=0.3.20",
+  "langchain-core>=0.3.41",
+  "langchain-openai>=0.3.8",
+  "langchain-mcp-adapters>=0.1.1",
+  "pydantic>=2.10.6",
+  "pydantic-settings>=2.8.0",
+  "httpx[socks]>=0.28.1",
+  "pymupdf>=1.25.3"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

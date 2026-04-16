@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eldercare-mcp"
+version = "0.1.0"
+description = "MCP server for elder care tools"
+requires-python = ">=3.11"
+dependencies = [
+  "fastmcp>=2.1.2",
+  "sqlalchemy>=2.0.38",
+  "psycopg[binary]>=3.2.5",
+  "pydantic>=2.10.6",
+  "pydantic-settings>=2.8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

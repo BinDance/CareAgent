@@ -1,0 +1,24 @@
+{
+  "name": "elder-care-agent",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/elder-web",
+    "apps/family-web",
+    "packages/shared-types",
+    "packages/ui"
+  ],
+  "scripts": {
+    "bootstrap": "sh ./scripts/bootstrap.sh",
+    "dev": "sh ./scripts/dev.sh",
+    "dev:web": "concurrently -k \"npm run dev -w apps/elder-web\" \"npm run dev -w apps/family-web\"",
+    "build": "npm run build -w apps/elder-web && npm run build -w apps/family-web",
+    "lint": "npm run lint -w apps/elder-web && npm run lint -w apps/family-web",
+    "test": "sh ./scripts/test.sh",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down -v"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

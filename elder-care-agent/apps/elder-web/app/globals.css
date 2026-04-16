@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-start: #fffaf0;
+  --bg-end: #f4e0b1;
+  --card: rgba(255, 251, 243, 0.92);
+  --ink: #1f1a17;
+  --muted: #6c5f57;
+  --accent: #f39b2f;
+  --accent-strong: #ca6d1c;
+  --safe: #55705e;
+  --danger: #b94a48;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Georgia, 'STKaiti', 'KaiTi', serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.85), transparent 35%),
+    linear-gradient(180deg, var(--bg-start), var(--bg-end));
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

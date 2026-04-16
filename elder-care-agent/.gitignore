@@ -1,0 +1,17 @@
+node_modules
+.next
+dist
+build
+.venv
+__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
+*.pyc
+.DS_Store
+.env
+apps/api-server/uploads
+apps/api-server/.coverage
+apps/family-web/.next
+apps/elder-web/.next
+apps/api-server/alembic/versions/__pycache__

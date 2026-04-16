@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: eldercare-mcp
+Version: 0.1.0
+Summary: MCP server for elder care tools
+Requires-Python: >=3.11
+Requires-Dist: fastmcp>=2.1.2
+Requires-Dist: sqlalchemy>=2.0.38
+Requires-Dist: psycopg[binary]>=3.2.5
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pydantic-settings>=2.8.0

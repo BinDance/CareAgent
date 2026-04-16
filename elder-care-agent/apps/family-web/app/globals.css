@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --family-bg-top: #f6f1e8;
+  --family-bg-bottom: #dde7ea;
+  --family-ink: #14213d;
+  --family-card: rgba(255, 255, 255, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Trebuchet MS', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: var(--family-ink);
+  background:
+    radial-gradient(circle at top right, rgba(230, 168, 75, 0.24), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(31, 111, 120, 0.18), transparent 32%),
+    linear-gradient(180deg, var(--family-bg-top), var(--family-bg-bottom));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

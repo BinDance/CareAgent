@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eldercare-api"
+version = "0.1.0"
+description = "FastAPI backend for the elder care agent MVP"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.11",
+  "uvicorn[standard]>=0.34.0",
+  "sqlalchemy>=2.0.38",
+  "psycopg[binary]>=3.2.5",
+  "alembic>=1.14.1",
+  "pydantic>=2.10.6",
+  "pydantic-settings>=2.8.0",
+  "python-multipart>=0.0.20",
+  "redis>=5.2.1",
+  "apscheduler>=3.10.4",
+  "httpx>=0.28.1",
+  "pymupdf>=1.25.3",
+  "python-dateutil>=2.9.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "../../packages/agent-core"]
+testpaths = ["tests"]

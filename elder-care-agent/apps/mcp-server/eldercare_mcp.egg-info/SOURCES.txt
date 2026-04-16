@@ -1,0 +1,8 @@
+pyproject.toml
+eldercare_mcp/__init__.py
+eldercare_mcp/main.py
+eldercare_mcp.egg-info/PKG-INFO
+eldercare_mcp.egg-info/SOURCES.txt
+eldercare_mcp.egg-info/dependency_links.txt
+eldercare_mcp.egg-info/requires.txt
+eldercare_mcp.egg-info/top_level.txt
